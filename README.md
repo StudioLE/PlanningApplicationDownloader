@@ -1,6 +1,8 @@
-# AJBL Helper
+# Planning Application Downloader
 
-An unofficial Google Chrome extension providing an easy method to download individual or all assets from the Architect's Journal Building Library.
+A Google Chrome extension providing an easy method to download all assets from a planning application.
+
+At present the application is only configured for the [Westminster Planning Portal](http://idoxpa.westminster.gov.uk/online-applications/). If you would like another planning portal domain to be added please [create an issue on GitHub](https://github.com/StudioLE/PlanningApplicationDownloader/issues/new).
 
 ## Releases
 
@@ -15,13 +17,13 @@ I'm always on the look out for collaborators so feel free to suggest new feature
 Clone the repository
 
 ```
-git clone https://github.com/StudioLE/AJBL.git AJBL
+git clone https://github.com/StudioLE/PlanningApplicationDownloader.git PlanningApplicationDownloader
 ```
 
 Enter the directory and install the dependencies. For this step you'll need to have [Node.js](https://nodejs.org/) and [bower](http://bower.io/) installed.
 
 ```
-cd AJBL
+cd PlanningApplicationDownloader
 npm install
 ```
 

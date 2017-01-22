@@ -1,8 +1,8 @@
 {
-  "name": "ajbl-helper",
-  "description": "Google Chrome extension to download individual or all files from AJBL",
+  "name": "planning-application-downloader",
+  "description": "Google Chrome extension to download all files from a Planning Application",
   "version": "0.0.1",
-  "homepage": "https://github.com/StudioLE/AJBL",
+  "homepage": "https://github.com/StudioLE/PlanningApplicationDownloader",
   "license": "",
   "dependencies": {
     "jquery": "~2.1.4"

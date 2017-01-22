@@ -11,25 +11,13 @@ var sendGetAssets = function(info, tab) {
 }
 
 /**
- * Send getAsset request
- */
-var sendGetAsset = function(info, tab) {
-  chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-    // Send message to content.js
-    chrome.tabs.sendMessage(tabs[0].id, {
-      message: 'getAsset',
-      src: info.srcUrl
-    })
-  })
-}
-
-/**
  * Download assets
  */
 var downloadAssets = function(assets) {
   assets.forEach(function(asset) {
+    console.log(asset)
     chrome.downloads.download({
-      url: 'http://www.ajbuildingslibrary.co.uk/download.php?id=' + asset.id
+      url: 'http://idoxpa.westminster.gov.uk' + asset.href
     })
   })
 }
@@ -38,17 +26,8 @@ var downloadAssets = function(assets) {
  * Create download all context menu entry
  */
 chrome.contextMenus.create({
- title: 'AJBL Helper - Download all files',
+ title: 'Planning Application Downloader - Download all files',
  onclick: sendGetAssets
-})
-
-/**
- * Create download file context menu entry
- */
-chrome.contextMenus.create({
- title: 'AJBL Helper - Download file',
- contexts: ["image"],
- onclick: sendGetAsset
 })
 
 /**
@@ -60,7 +39,7 @@ chrome.runtime.onMessage.addListener(
       downloadAssets(request.assets)
     }
     else {
-      alert('AJBL Helper Error: unknown message: ' + request.message)
+      alert('Planning Application Downloader: unknown message: ' + request.message)
     }
   }
 )

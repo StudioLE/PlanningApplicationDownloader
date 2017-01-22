@@ -50,7 +50,7 @@ gulp.task('bump', function(){
 // Package release
 gulp.task('release', function () {
   gulp.src('build/**/*')
-  .pipe(gp_zip('ajbl-helper-' + ver + '.crx'))
+  .pipe(gp_zip('planning-application-downloader-' + ver + '.zip'))
   .pipe(gulp.dest('releases'))
 })
 

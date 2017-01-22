@@ -1,14 +1,11 @@
 {
-  "name": "ajbl-helper",
+  "name": "planning-application-downloader",
+  "description": "Google Chrome extension to download all files from a Planning Application",
   "version": "0.0.1",
-  "description": "Google Chrome extension to download individual or all files from AJBL",
-  "repository": "https://github.com/StudioLE/AJBL",
+  "repository": "https://github.com/StudioLE/PlanningApplicationDownloader",
   "license": "",
   "scripts": {
-    "postinstall": "bower install",
-    "prestart": "npm install",
-    "start": "node cli.js",
-    "pretest": "npm install"
+    "postinstall": "bower install"
   },
   "dependencies": {
     "bower": "^1.3.1",

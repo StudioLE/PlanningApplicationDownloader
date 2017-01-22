@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "AJBL Helper",
+  "name": "Planning Application Helper Helper",
   "version": "0.0.1",
   "permissions": [
     "contextMenus", 
@@ -13,7 +13,7 @@
   },
   "content_scripts": [{
     "matches": [
-      "http://www.ajbuildingslibrary.co.uk/projects/display/id/*"
+      "http://idoxpa.westminster.gov.uk/online-applications/*"
     ],
     "js": [
       "js/vendor.js",
