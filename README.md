@@ -2,6 +2,8 @@
 
 A Google Chrome extension providing an easy method to download all assets from a planning application.
 
+Download it from the [Chrome Web Store](https://chrome.google.com/webstore/detail/cinlipnkidejahanokkmacfedcnkklga)
+
 ## Adding Planning Portal Domains
 
 At present only the following planning portals have been added to the extension.
@@ -65,3 +67,7 @@ Bump the package version numbers
 ```
 gulp bump
 ```
+
+## Thanks
+
+[Roof Icon](https://thenounproject.com/term/roof/369098)  by Juan Pablo Bravo from the Noun Project. Available under a [Creative Commons license](https://creativecommons.org/licenses/by/3.0/us/).
