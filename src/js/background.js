@@ -17,7 +17,7 @@ var downloadAssets = function(assets) {
   assets.forEach(function(asset) {
     console.log(asset)
     chrome.downloads.download({
-      url: 'http://idoxpa.westminster.gov.uk' + asset.href
+      url: asset.href
     })
   })
 }
@@ -27,7 +27,12 @@ var downloadAssets = function(assets) {
  */
 chrome.contextMenus.create({
  title: 'Planning Application Downloader - Download all files',
- onclick: sendGetAssets
+ onclick: sendGetAssets,
+  documentUrlPatterns: [
+    "http://idoxpa.westminster.gov.uk/online-applications/*",
+    "https://publicaccessapplications.newcastle.gov.uk/online-applications/*",
+    "https://development.towerhamlets.gov.uk/online-applications/*"
+  ]
 })
 
 /**

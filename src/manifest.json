@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Planning Application Helper Helper",
+  "name": "Planning Application Downloader",
   "version": "0.0.1",
   "permissions": [
     "contextMenus", 
@@ -13,7 +13,9 @@
   },
   "content_scripts": [{
     "matches": [
-      "http://idoxpa.westminster.gov.uk/online-applications/*"
+      "http://idoxpa.westminster.gov.uk/online-applications/*",
+      "https://publicaccessapplications.newcastle.gov.uk/online-applications/*",
+      "https://development.towerhamlets.gov.uk/online-applications/*"
     ],
     "js": [
       "js/vendor.js",

@@ -2,11 +2,25 @@
 
 A Google Chrome extension providing an easy method to download all assets from a planning application.
 
-At present the application is only configured for the [Westminster Planning Portal](http://idoxpa.westminster.gov.uk/online-applications/). If you would like another planning portal domain to be added please [create an issue on GitHub](https://github.com/StudioLE/PlanningApplicationDownloader/issues/new).
+## Adding Planning Portal Domains
+
+At present only the following planning portals have been added to the extension.
+
+- [City of Westminster](http://idoxpa.westminster.gov.uk/online-applications/)
+- [Newcastle City Council](https://publicaccessapplications.newcastle.gov.uk/online-applications/)
+- [Tower Hamlets](https://development.towerhamlets.gov.uk/online-applications/)
+
+If you would like another planning portal domain to be added please [create an issue on GitHub](https://github.com/StudioLE/PlanningApplicationDownloader/issues/new). Or if you have a little coding experience you can create a pull request after forking the repository and adding the details of the portal to the following files:
+
+```
+README.md
+src/manifest.json
+src/js/background.js
+```
 
 ## Releases
 
-All releases are available in the [/releases](https://github.com/StudioLE/ajbl/tree/master/releases) directory.
+All tagged releases are available at [/releases](https://github.com/StudioLE/PlanningApplicationDownloader/releases).
 
 ## Contributing
 
@@ -50,8 +64,4 @@ gulp clean
 Bump the package version numbers
 ```
 gulp bump
-```
-Create a `.crx` release
-```
-gulp release
 ```
