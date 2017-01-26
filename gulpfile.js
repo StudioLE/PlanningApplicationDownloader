@@ -9,7 +9,6 @@ var gp_clean = require('gulp-clean')
 var gp_concat = require('gulp-concat')
 var gp_rename = require('gulp-rename')
 var gp_uglify = require('gulp-uglify')
-var gp_zip = require('gulp-zip')
 var p = require('path')
 
 var build = {
@@ -45,13 +44,6 @@ gulp.task('bump', function(){
     // read: false
   })
   .pipe(gp_clean())
-})
-
-// Package release
-gulp.task('release', function () {
-  gulp.src('build/**/*')
-  .pipe(gp_zip('planning-application-downloader-' + ver + '.zip'))
-  .pipe(gulp.dest('releases'))
 })
 
 // Copy static assets
