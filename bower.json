@@ -5,6 +5,6 @@
   "homepage": "https://github.com/StudioLE/PlanningApplicationDownloader",
   "license": "",
   "dependencies": {
-    "jquery": "~3.1.1"
+    "jquery": "~3.2.1"
   }
 }
