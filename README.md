@@ -8,6 +8,7 @@ Download it from the [Chrome Web Store](https://chrome.google.com/webstore/detai
 
 At present only the following planning portals have been added to the extension.
 
+- [Bracknell Forest Council](https://planapp.bracknell-forest.gov.uk/online-applications/)
 - [City of Westminster](http://idoxpa.westminster.gov.uk/online-applications/)
 - [Newcastle City Council](https://publicaccessapplications.newcastle.gov.uk/online-applications/)
 - [Tower Hamlets](https://development.towerhamlets.gov.uk/online-applications/)

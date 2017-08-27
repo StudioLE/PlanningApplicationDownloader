@@ -13,6 +13,7 @@
   },
   "content_scripts": [{
     "matches": [
+      "https://planapp.bracknell-forest.gov.uk/online-applications/*",
       "http://idoxpa.westminster.gov.uk/online-applications/*",
       "https://publicaccessapplications.newcastle.gov.uk/online-applications/*",
       "https://development.towerhamlets.gov.uk/online-applications/*"

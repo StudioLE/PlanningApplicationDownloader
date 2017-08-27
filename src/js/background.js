@@ -26,9 +26,10 @@ var downloadAssets = function(assets) {
  * Create download all context menu entry
  */
 chrome.contextMenus.create({
- title: 'Planning Application Downloader - Download all files',
- onclick: sendGetAssets,
+  title: 'Planning Application Downloader - Download all files',
+  onclick: sendGetAssets,
   documentUrlPatterns: [
+    "https://planapp.bracknell-forest.gov.uk/online-applications/*",
     "http://idoxpa.westminster.gov.uk/online-applications/*",
     "https://publicaccessapplications.newcastle.gov.uk/online-applications/*",
     "https://development.towerhamlets.gov.uk/online-applications/*"
