@@ -33,9 +33,14 @@ var build = {
 gulp.task('bump', function(){
   gulp.src(['./bower.json', './package.json'])
   .pipe(gp_bump({
-    type:'minor'
+    type:'patch'
   }))
   .pipe(gulp.dest('./'))
+  gulp.src(['src/manifest.json'])
+  .pipe(gp_bump({
+    type:'patch'
+  }))
+  .pipe(gulp.dest('src/'))
 })
 
 // Clean build directory

@@ -6,6 +6,7 @@ tmp
 node_modules/
 bower_components/
 build/
+releases/
+screenshots/
 
 build.pem
-build.crx
