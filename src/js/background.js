@@ -48,7 +48,7 @@ chrome.contextMenus.create({
     "https://planning.southwark.gov.uk/online-applications/*",
     "http://planningregister.sutton.gov.uk/online-applications/*",
     "https://development.towerhamlets.gov.uk/online-applications/*",
-    "http://idoxpa.westminster.gov.uk/online-applications/*"
+    "https://idoxpa.westminster.gov.uk/online-applications/*"
   ]
 })
 

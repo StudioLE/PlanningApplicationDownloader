@@ -27,7 +27,7 @@ At present only the following planning portals have been added to the extension:
 - [Southwark](https://planning.southwark.gov.uk/online-applications/)
 - [Sutton](http://planningregister.sutton.gov.uk/online-applications/)
 - [Tower Hamlets](https://development.towerhamlets.gov.uk/online-applications/)
-- [Westminster](http://idoxpa.westminster.gov.uk/online-applications/)
+- [Westminster](https://idoxpa.westminster.gov.uk/online-applications/)
 
 If you would like another planning portal domain to be added please [create an issue on GitHub](https://github.com/StudioLE/PlanningApplicationDownloader/issues/new). Or if you have a little coding experience you can create a pull request after forking the repository and adding the details of the portal to the following files:
 
