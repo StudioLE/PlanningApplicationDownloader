@@ -6,12 +6,28 @@ Download it from the [Chrome Web Store](https://chrome.google.com/webstore/detai
 
 ## Adding Planning Portal Domains
 
-At present only the following planning portals have been added to the extension.
+At present only the following planning portals have been added to the extension:
 
-- [Bracknell Forest Council](https://planapp.bracknell-forest.gov.uk/online-applications/)
-- [City of Westminster](http://idoxpa.westminster.gov.uk/online-applications/)
-- [Newcastle City Council](https://publicaccessapplications.newcastle.gov.uk/online-applications/)
+- [Barking and Dagenham](http://paplan.lbbd.gov.uk/online-applications/)
+- [Barnet](https://publicaccess.barnet.gov.uk/online-applications/)
+- [Bexley](http://pa.bexley.gov.uk/online-applications/)
+- [Bracknell Forest](https://planapp.bracknell-forest.gov.uk/online-applications/)
+- [Brent](https://pa.brent.gov.uk/online-applications/)
+- [Bromley](https://searchapplications.bromley.gov.uk/online-applications/)
+- [Croydon](https://publicaccess3.croydon.gov.uk/online-applications/)
+- [Ealing](https://pam.ealing.gov.uk/online-applications/)
+- [Enfield](https://planningandbuildingcontrol.enfield.gov.uk/online-applications/)
+- [Greenwich](https://planning.royalgreenwich.gov.uk/online-applications/)
+- [Hammersmith and Fulham](http://public-access.lbhf.gov.uk/online-applications/)
+- [Newcastle City](https://publicaccessapplications.newcastle.gov.uk/online-applications/)
+- [Newham](https://pa.newham.gov.uk/online-applications/)
+- [Lambeth](https://planning.lambeth.gov.uk/online-applications/)
+- [Lewisham](https://planning.lewisham.gov.uk/online-applications/)
+- [Norwich City](https://planning.norwich.gov.uk/online-applications/)
+- [Southwark](https://planning.southwark.gov.uk/online-applications/)
+- [Sutton](http://planningregister.sutton.gov.uk/online-applications/)
 - [Tower Hamlets](https://development.towerhamlets.gov.uk/online-applications/)
+- [Westminster](http://idoxpa.westminster.gov.uk/online-applications/)
 
 If you would like another planning portal domain to be added please [create an issue on GitHub](https://github.com/StudioLE/PlanningApplicationDownloader/issues/new). Or if you have a little coding experience you can create a pull request after forking the repository and adding the details of the portal to the following files:
 
