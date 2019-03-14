@@ -37,6 +37,7 @@ chrome.contextMenus.create({
     "https://searchapplications.bromley.gov.uk/online-applications/*",
     "https://publicaccess3.croydon.gov.uk/online-applications/*",
     "https://pam.ealing.gov.uk/online-applications/*",
+    "https://citydev-portal.edinburgh.gov.uk/idoxpa-web/*",
     "https://planningandbuildingcontrol.enfield.gov.uk/online-applications/*",
     "https://planning.royalgreenwich.gov.uk/online-applications/*",
     "http://public-access.lbhf.gov.uk/online-applications/*",

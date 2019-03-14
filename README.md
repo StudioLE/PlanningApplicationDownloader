@@ -16,6 +16,7 @@ At present only the following planning portals have been added to the extension:
 - [Bromley](https://searchapplications.bromley.gov.uk/online-applications/)
 - [Croydon](https://publicaccess3.croydon.gov.uk/online-applications/)
 - [Ealing](https://pam.ealing.gov.uk/online-applications/)
+- [Edinburgh](https://citydev-portal.edinburgh.gov.uk/idoxpa-web/)
 - [Enfield](https://planningandbuildingcontrol.enfield.gov.uk/online-applications/)
 - [Greenwich](https://planning.royalgreenwich.gov.uk/online-applications/)
 - [Hammersmith and Fulham](http://public-access.lbhf.gov.uk/online-applications/)
