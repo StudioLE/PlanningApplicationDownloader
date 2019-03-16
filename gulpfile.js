@@ -65,6 +65,7 @@ gulp.task('assets', function() {
 gulp.task('js', function() {
   gulp.src([
     'src/js/get-assets.js',
+    'src/js/get-summary.js',
     'src/js/background.js'
   ])
   // .pipe(gp_concat('concat.js'))

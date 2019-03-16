@@ -37,7 +37,8 @@
     ],
     "js": [
       "js/vendor.js",
-      "js/get-assets.js"
+      "js/get-assets.js",
+      "js/get-summary.js"
     ]
   }],
   "background": {

@@ -43,8 +43,5 @@ chrome.runtime.onMessage.addListener(
     if(request.message === 'getAssets') {
       getAssets()
     }
-    else {
-      console.error('Unknown message: ' + request.message)
-    }
   }
 )
