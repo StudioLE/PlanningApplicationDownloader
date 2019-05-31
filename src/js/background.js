@@ -1,32 +1,35 @@
 var planning_portals = [
-  "http://paplan.lbbd.gov.uk/online-applications/*",
-  "https://publicaccess.barnet.gov.uk/online-applications/*",
-  "http://pa.bexley.gov.uk/online-applications/*",
-  "https://planapp.bracknell-forest.gov.uk/online-applications/*",
-  "https://pa.brent.gov.uk/online-applications/*",
-  "https://searchapplications.bromley.gov.uk/online-applications/*",
-  "https://publicaccess3.croydon.gov.uk/online-applications/*",
-  "https://pam.ealing.gov.uk/online-applications/*",
-  "https://citydev-portal.edinburgh.gov.uk/idoxpa-web/*",
-  "https://planningandbuildingcontrol.enfield.gov.uk/online-applications/*",
-  "https://planning.royalgreenwich.gov.uk/online-applications/*",
-  "http://public-access.lbhf.gov.uk/online-applications/*",
-  "https://publicaccessapplications.newcastle.gov.uk/online-applications/*",
-  "https://pa.newham.gov.uk/online-applications/*",
-  "https://planning.lambeth.gov.uk/online-applications/*",
-  "https://planning.lewisham.gov.uk/online-applications/*",
-  "https://planning.norwich.gov.uk/online-applications/*",
-  "https://planning.southwark.gov.uk/online-applications/*",
-  "http://planningregister.sutton.gov.uk/online-applications/*",
-  "https://development.towerhamlets.gov.uk/online-applications/*",
-  "https://idoxpa.westminster.gov.uk/online-applications/*"
+  'http://paplan.lbbd.gov.uk/online-applications/*',
+  'https://publicaccess.barnet.gov.uk/online-applications/*',
+  'http://pa.bexley.gov.uk/online-applications/*',
+  'https://planapp.bracknell-forest.gov.uk/online-applications/*',
+  'https://pa.brent.gov.uk/online-applications/*',
+  'https://searchapplications.bromley.gov.uk/online-applications/*',
+  'https://publicaccess3.croydon.gov.uk/online-applications/*',
+  'https://pam.ealing.gov.uk/online-applications/*',
+  'https://citydev-portal.edinburgh.gov.uk/idoxpa-web/*',
+  'https://planningandbuildingcontrol.enfield.gov.uk/online-applications/*',
+  'https://planning.royalgreenwich.gov.uk/online-applications/*',
+  'http://public-access.lbhf.gov.uk/online-applications/*',
+  'https://publicaccessapplications.newcastle.gov.uk/online-applications/*',
+  'https://pa.newham.gov.uk/online-applications/*',
+  'https://planning.lambeth.gov.uk/online-applications/*',
+  'https://planning.lewisham.gov.uk/online-applications/*',
+  'https://planning.norwich.gov.uk/online-applications/*',
+  'https://planning.southwark.gov.uk/online-applications/*',
+  'http://planningregister.sutton.gov.uk/online-applications/*',
+  'https://development.towerhamlets.gov.uk/online-applications/*',
+  'https://idoxpa.westminster.gov.uk/online-applications/*'
 ]
 
 /**
  * Send getSummary request
  */
 var sendGetSummary = function(info, tab) {
-  chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+  chrome.tabs.query({
+    active: true,
+    currentWindow: true
+  }, function(tabs) {
     // Send message to get-summary.js
     chrome.tabs.sendMessage(tabs[0].id, {
       message: 'getSummary'
@@ -38,7 +41,10 @@ var sendGetSummary = function(info, tab) {
  * Send getAssets request
  */
 var sendGetAssets = function(info, tab) {
-  chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+  chrome.tabs.query({
+    active: true,
+    currentWindow: true
+  }, function(tabs) {
     // Send message to get-assets.js
     chrome.tabs.sendMessage(tabs[0].id, {
       message: 'getAssets'
@@ -86,13 +92,11 @@ chrome.contextMenus.create({
 /**
  * Message listener
  */
-chrome.runtime.onMessage.addListener(
-  function(request, sender, sendResponse) {
-    if(request.message === 'downloadAssets') {
-      downloadAssets(request.assets)
-    }
-    else {
-      alert('Planning Application Downloader: unknown message: ' + request.message)
-    }
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+  if(request.message === 'downloadAssets') {
+    downloadAssets(request.assets)
   }
-)
+  else {
+    alert('Planning Application Downloader: unknown message: ' + request.message)
+  }
+})

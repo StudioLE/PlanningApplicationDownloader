@@ -1,16 +1,15 @@
-// Core modules
-var ver = require('./package.json').version
+/* eslint-disable no-implicit-globals */
 
 // Node modules
-const { src, dest, series, parallel } = require('gulp')
+const { src, dest, parallel } = require('gulp')
 var gp_bump = require('gulp-bump')
 var gp_clean = require('gulp-clean')
 var gp_concat = require('gulp-concat')
 var gp_rename = require('gulp-rename')
 
 // Bump package.json version
-bump_package = function() {
-  return src(['./package.json'])
+var bump_package = function () {
+  return src([ './package.json' ])
   .pipe(gp_bump({
     type: 'patch'
   }))
@@ -18,8 +17,8 @@ bump_package = function() {
 }
 
 // Bump manifest.json version
-bump_manifest = function() {
-  return src(['src/manifest.json'])
+var bump_manifest = function() {
+  return src([ 'src/manifest.json' ])
   .pipe(gp_bump({
     type: 'patch'
   }))
@@ -27,7 +26,7 @@ bump_manifest = function() {
 }
 
 // Clean build directory
- clean = function() {
+var clean = function() {
   return src('build', {
     // read: false
   })
@@ -35,19 +34,19 @@ bump_manifest = function() {
 }
 
 // Copy manifest.json
-assets_manifest = function() {
+var assets_manifest = function() {
   return src('src/manifest.json')
   .pipe(dest('build'))
 }
 
 // Copy icons
-assets_icons = function() {
+var assets_icons = function() {
   return src('src/icons/*')
   .pipe(dest('build/icons'))
 }
 
 // Build app JS
-js = function() {
+var js = function() {
   return src([
     'src/js/get-assets.js',
     'src/js/get-summary.js',
@@ -57,7 +56,7 @@ js = function() {
 }
 
 // Build vendor JS
-vendor_js = function(cb) {
+var vendor_js = function() {
   return src([
     'node_modules/jquery/dist/jquery.min.js'
   ])

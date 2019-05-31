@@ -13,7 +13,7 @@ var getSummary = function() {
   // Get the summary page
   $.get(summary.url, function(data) {
     // Extract the summary table
-    var table = $($.parseHTML(data)).find('#simpleDetailsTable tr').each(function(index, el) {
+    $($.parseHTML(data)).find('#simpleDetailsTable tr').each(function(index, el) {
       var key, value
 
       // Clean the data
@@ -25,28 +25,28 @@ var getSummary = function() {
     })
 
   })
-  .done(function(data) {
+  .done(function() {
     console.log(summary)
     
     // Store the summary data as file
     var json = JSON.stringify(summary, undefined, 2)
-    var doc = URL.createObjectURL( new Blob([json], {type: 'application/json'}) )
+    var doc = URL.createObjectURL( new Blob([ json ], { type: 'application/json' }) )
 
     // Use Reference and Address for the filename. Add a prefix so it appears first.
     var filename = '# ' + summary['Reference'].split('/').join('_')
     filename += ' ' + summary['Address'] + '.json'
 
-    var assets = [{
+    var assets = [ {
       href: doc,
       title: 'Application Summary',
       filename: filename
-    }]
+    } ]
 
     console.log('Planning Application Downloader is downloading:', assets)
     
     // Send the asset as a message to background.js to be downloaded
     chrome.runtime.sendMessage({
-      message: 'downloadAssets', 
+      message: 'downloadAssets',
       assets: assets
     })
 
@@ -56,10 +56,8 @@ var getSummary = function() {
 /**
  * Message listener
  */
-chrome.runtime.onMessage.addListener(
-  function(request, sender, sendResponse) {
-    if(request.message === 'getSummary') {
-      getSummary()
-    }
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+  if(request.message === 'getSummary') {
+    getSummary()
   }
-)
+})

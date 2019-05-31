@@ -29,7 +29,7 @@ var getAssets = function() {
     console.log('Planning Application Downloader is downloading:', assets)
     // Send message to background.js
     chrome.runtime.sendMessage({
-      message: 'downloadAssets', 
+      message: 'downloadAssets',
       assets: assets
     })
   })
@@ -38,10 +38,8 @@ var getAssets = function() {
 /**
  * Message listener
  */
-chrome.runtime.onMessage.addListener(
-  function(request, sender, sendResponse) {
-    if(request.message === 'getAssets') {
-      getAssets()
-    }
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+  if(request.message === 'getAssets') {
+    getAssets()
   }
-)
+})
