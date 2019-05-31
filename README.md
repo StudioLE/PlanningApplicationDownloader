@@ -25,6 +25,7 @@ At present only the following planning portals have been added to the extension:
 - [Lambeth](https://planning.lambeth.gov.uk/online-applications/)
 - [Lewisham](https://planning.lewisham.gov.uk/online-applications/)
 - [Norwich City](https://planning.norwich.gov.uk/online-applications/)
+- [Manchester](https://pa.manchester.gov.uk/online-applications/)
 - [Southwark](https://planning.southwark.gov.uk/online-applications/)
 - [Sutton](http://planningregister.sutton.gov.uk/online-applications/)
 - [Tower Hamlets](https://development.towerhamlets.gov.uk/online-applications/)

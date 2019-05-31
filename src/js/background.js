@@ -11,6 +11,7 @@ var planning_portals = [
   'https://planningandbuildingcontrol.enfield.gov.uk/online-applications/*',
   'https://planning.royalgreenwich.gov.uk/online-applications/*',
   'http://public-access.lbhf.gov.uk/online-applications/*',
+  'https://pa.manchester.gov.uk/online-applications/*',
   'https://publicaccessapplications.newcastle.gov.uk/online-applications/*',
   'https://pa.newham.gov.uk/online-applications/*',
   'https://planning.lambeth.gov.uk/online-applications/*',
