@@ -36,7 +36,6 @@ If you would like another planning portal domain to be added please [create an i
 ```
 README.md
 src/manifest.json
-src/js/background.js
 ```
 
 ## Releases
