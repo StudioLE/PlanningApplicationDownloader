@@ -63,7 +63,6 @@ var background_js = function() {
   ])
   .pipe(gp_replace('var planning_portals = []', function(match) {
     var planning_portals = manifest.content_scripts[0].matches
-    console.timeLog(planning_portals)
     return match.substr(0, match.length - 1) + '\n  \'' + planning_portals.join('\',\n  \'') + '\'\n]'
   }))
   .pipe(dest('build/js'))
