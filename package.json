@@ -1,7 +1,7 @@
 {
   "name": "planning-application-downloader",
   "description": "Google Chrome extension to download all files from a Planning Application",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "repository": "https://github.com/StudioLE/PlanningApplicationDownloader",
   "license": "",
   "dependencies": {
