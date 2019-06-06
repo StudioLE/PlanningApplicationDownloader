@@ -24,6 +24,7 @@ At present only the following planning portals have been added to the extension:
 - [Newham](https://pa.newham.gov.uk/online-applications/)
 - [Lambeth](https://planning.lambeth.gov.uk/online-applications/)
 - [Lewisham](https://planning.lewisham.gov.uk/online-applications/)
+- [London Legacy](http://planningregister.londonlegacy.co.uk/)
 - [Norwich City](https://planning.norwich.gov.uk/online-applications/)
 - [Manchester](https://pa.manchester.gov.uk/online-applications/)
 - [Southwark](https://planning.southwark.gov.uk/online-applications/)

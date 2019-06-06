@@ -2,6 +2,19 @@
  * Get application summary
  */
 var getSummary = function() {
+  var host = window.location.host
+  if(host == 'planningregister.londonlegacy.co.uk') {
+    console.log('getSummary not configured for Apas')
+  }
+  else {
+    getIdoxSummary()
+  }
+}
+
+/**
+ * Get application summary
+ */
+var getIdoxSummary = function() {
   
   console.log('Planning Application Downloader is fetching the application summary')
 
