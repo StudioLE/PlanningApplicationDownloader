@@ -14,6 +14,7 @@ At present only the following planning portals have been added to the extension:
 - [Bracknell Forest](https://planapp.bracknell-forest.gov.uk/online-applications/)
 - [Brent](https://pa.brent.gov.uk/online-applications/)
 - [Bromley](https://searchapplications.bromley.gov.uk/online-applications/)
+- [Cornwall](http://planning.cornwall.gov.uk/online-applications/)
 - [Croydon](https://publicaccess3.croydon.gov.uk/online-applications/)
 - [Ealing](https://pam.ealing.gov.uk/online-applications/)
 - [Edinburgh](https://citydev-portal.edinburgh.gov.uk/idoxpa-web/)
