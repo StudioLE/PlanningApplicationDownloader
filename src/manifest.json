@@ -22,6 +22,7 @@
       "http://planning.cornwall.gov.uk/online-applications/*",
       "https://publicaccess3.croydon.gov.uk/online-applications/*",
       "https://pam.ealing.gov.uk/online-applications/*",
+      "http://applications.ebbsfleetdc.org.uk/online-applications/*",
       "https://citydev-portal.edinburgh.gov.uk/idoxpa-web/*",
       "https://planningandbuildingcontrol.enfield.gov.uk/online-applications/*",
       "https://planning.royalgreenwich.gov.uk/online-applications/*",
@@ -36,6 +37,7 @@
       "https://planning.southwark.gov.uk/online-applications/*",
       "http://planningregister.sutton.gov.uk/online-applications/*",
       "https://development.towerhamlets.gov.uk/online-applications/*",
+      "https://planning.wakefield.gov.uk/online-applications/*",
       "https://idoxpa.westminster.gov.uk/online-applications/*"
     ],
     "js": [
